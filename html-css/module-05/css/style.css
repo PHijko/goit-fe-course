@@ -261,10 +261,6 @@ main button:last-child {
   background-color: #323232;
 }
 
-.item_info:hover {
-  background-color: #1abc9c;
-}
-
 .item_info p {
   float: left;
   padding: 10px;
@@ -291,6 +287,10 @@ main button:last-child {
   letter-spacing: -1px;
   color: #fff;
   padding: 11px;
+}
+
+main section:hover .item_info {
+  background-color: #1abc9c;
 }
 
 /* Footer */
