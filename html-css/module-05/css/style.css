@@ -4,11 +4,11 @@
   margin: 0;
 }
 
-.wrapper {
+.conteiner {
+  display: block;
   width: 1110px;
   margin: auto;
   background-color: #fff;
-  padding: 36px 0px;
 }
 
 .clearfix::after {
@@ -17,8 +17,16 @@
   clear: both;
 }
 
-.logo {
-  float: left;
+/* Header (Logo & Menu) */
+header {
+  padding: 38px 0 32px;
+}
+
+h1 {
+  display: inline-block;
+}
+
+h1 a {
   letter-spacing: -1px;
   font-size: 30px;
   font-weight: 300;
@@ -26,32 +34,38 @@
   color: #555252;
   line-height: 32px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-.logo::first-letter {
+h1::first-letter {
   font-weight: 900;
   color: #1abc9c;
 }
 
-.navigation {
-  float: right;
-  padding: 7px 0;
+header ul {
+    float: right;
+    padding-top: 6px;
+    text-transform: uppercase;
 }
 
-.menu .menu__item {
+header li {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
-  color: #0f0101;
-  line-height: 11px;
-  text-transform: uppercase;
-  display: inline-block;
 }
 
-.menu .menu__item:not(:last-child) {
+nav > ul a {
+  text-decoration: none;
+  color: #555252;
+}
+
+nav ul li:not(:last-child) {
   margin-right: 34px;
 }
 
-.menu .menu__item:hover {
+header li > a:hover {
   color: #1abc9c;
 }
+
+/* Slider */
