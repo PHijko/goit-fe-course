@@ -225,18 +225,15 @@ h1 > a {
 }
 
 .card_2 a::after {
-  background: url(../img/tube.png) no-repeat
-    var(--primary-yellow-color);
+  background: url(../img/tube.png) no-repeat var(--primary-yellow-color);
 }
 
 .card_3 a::after {
-  background: url(../img/coffe.png) no-repeat
-    var(--primary-ligthgreen-color);
+  background: url(../img/coffe.png) no-repeat var(--primary-ligthgreen-color);
 }
 
 .card_4 a::after {
-  background: url(../img/twitter.png) no-repeat
-    var(--primary-blue-color);
+  background: url(../img/twitter.png) no-repeat var(--primary-blue-color);
 }
 
 .article button {
