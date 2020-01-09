@@ -1,14 +1,20 @@
-* {
+html {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  font-size: 0;
 }
 
-.conteiner {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
   display: block;
   width: 1110px;
-  margin: auto;
-  background-color: #fff;
+  margin: 0 auto;
 }
 
 .clearfix::after {
@@ -43,9 +49,9 @@ h1::first-letter {
 }
 
 header ul {
-    float: right;
-    padding-top: 6px;
-    text-transform: uppercase;
+  float: right;
+  padding-top: 6px;
+  text-transform: uppercase;
 }
 
 header li {
@@ -69,3 +75,242 @@ header li > a:hover {
 }
 
 /* Slider */
+.slider {
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  filter: brightness(0.52);
+}
+
+.slider_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 742px;
+}
+
+.slider_text h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 82px;
+  letter-spacing: -1px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.slider_text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 54px;
+  letter-spacing: -1px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.arrow_left {
+  float: left;
+}
+
+.pe-7s-angle-left {
+  font-size: 104px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #fff;
+  background-color: rgba(26, 188, 156, 0.65);
+}
+
+.pe-7s-angle-left:hover {
+  background-color: #1abc9c;
+}
+
+.arrow_right {
+  float: right;
+}
+
+.pe-7s-angle-right {
+  font-size: 104px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  color: #fff;
+  background-color: rgba(26, 188, 156, 0.65);
+}
+
+.pe-7s-angle-right:hover {
+  background-color: #1abc9c;
+}
+
+/* Main */
+main {
+  background-color: #e9f0fd;
+  padding-top: 100px;
+}
+
+main h3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  color: #515151;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+main h3:after {
+  content: "";
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 32px auto 0;
+}
+
+main section {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 100px;
+}
+
+main section:last-child {
+  margin-right: 0;
+}
+
+.item {
+  position: relative;
+}
+
+.item_menu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 10px solid #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.item_menu:hover {
+  opacity: 1;
+}
+
+.item_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main button {
+  float: left;
+  margin: 0 9px 7px 0;
+  background: none;
+  color: #fff;
+  font-size: 30px;
+  border: 1px solid #fff;
+}
+
+main button:nth-child(3n) {
+  margin-right: 0;
+}
+main button:last-child {
+  margin: 0;
+}
+
+.pe-7s-cart span {
+  float: right;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 7px 7px auto;
+}
+
+.pe-7s-like,
+.pe-7s-shuffle,
+.pe-7s-clock {
+  padding: 9px;
+}
+
+.pe-7s-cart {
+  float: left;
+  width: 166px;
+  padding: 9px;
+  background-color: #323232;
+}
+
+.pe-7s-like:hover,
+.pe-7s-shuffle:hover,
+.pe-7s-clock:hover,
+.pe-7s-cart:hover {
+  background-color: #1abc9c;
+}
+
+.item_info {
+  background-color: #323232;
+}
+
+.item_info:hover {
+  background-color: #1abc9c;
+}
+
+.item_info p {
+  float: left;
+  padding: 10px;
+}
+
+.item_info a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.item_info span {
+  float: right;
+  width: 54px;
+  background-color: rgba(255, 255, 255, 0.44);
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  color: #fff;
+  padding: 11px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fefefe;
+  background-color: #323232;
+  text-transform: capitalize;
+  padding: 38px 0;
+}
+
+footer a {
+  color: #1abc9c;
+  text-decoration: none;
+}
